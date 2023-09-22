@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-poppins;
+    }
+}
+
+@layer components {
+    .section-title {
+        @apply font-semibold text-[44px] leading-normal tracking-[-0.034px];
+    }
+
+    .section-text {
+        @apply text-lightgrey text-base tracking-[-0.032px]
+    }
+
+    .tab-trigger {
+        @apply flex items-center justify-center text-center text-lightgrey;
+    }
+
+    .tab-trigger.active {
+        @apply text-blueviolet font-semibold text-xl pb-[9px] border-b-blueviolet border-b-2 rounded-b-sm;
+    }
+    .group.scroll .header {
+        @apply bg-blueviolet;
+    }
+
+}
